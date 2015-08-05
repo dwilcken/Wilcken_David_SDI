@@ -7,8 +7,8 @@
 
 
 //Number variable
-var numberOfYearsInTheAirForce;
-numberOfYearsInTheAirForce = 7
+var numberOfYearsInTheAirForce = 7;
+
 
 //Boolean variable
-
+var mexicanFoodIsMyFavorite = true;
