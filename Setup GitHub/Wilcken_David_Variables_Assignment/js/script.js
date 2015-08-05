@@ -1,9 +1,6 @@
-//String and Boolean Variables
+//Arrays
 
-var age = 31;
+var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", "Rizzo"];
 
-var isStudent = false;
+console.log(muppetNames[1]);
 
-var firstName = "David";
-
-var phrase = 'I don\'t know \n You\'ll have to speak with the professor';
