@@ -4,7 +4,7 @@
 //Output Assignment
 
 //String variable
-alert ("What city do I currently Live ?in");
+alert ("What city do I currently Live in?");
 var currentCity = "Key West Florida";
 console.log (currentCity);
 
