@@ -1,7 +1,9 @@
-//Declaring Variables
+//String and Boolean Variables
 
-var age;
-age = 31;
+var age = 31;
 
+var isStudent = false;
 
-var yearOfBirth = 1983;
+var firstName = "David";
+
+var phrase = 'I don\'t know \n You\'ll have to speak with the professor';
