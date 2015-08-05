@@ -5,7 +5,10 @@
 
 //String variable
 
+
 //Number variable
+var numberOfYearsInTheAirForce;
+numberOfYearsInTheAirForce = 7
 
 //Boolean variable
 
