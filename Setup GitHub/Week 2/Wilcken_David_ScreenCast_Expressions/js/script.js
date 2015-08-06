@@ -56,6 +56,33 @@ var secPart = 4529;
 var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
 console.log(phoneNo);
 
+//Assignment Operators
+var a = 3;
+a *= 4; //a = a * 4
+console.log(a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
