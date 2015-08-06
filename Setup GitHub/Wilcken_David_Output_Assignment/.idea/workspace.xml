@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42230ca3-dce4-455b-a947-5d84e05d7bed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Wilcken_David_Output_Assignment.zip" afterPath="$PROJECT_DIR$/../Wilcken_David_Output_Assignment.zip" />
-    </list>
+    <list default="true" id="42230ca3-dce4-455b-a947-5d84e05d7bed" name="Default" comment="" />
     <ignored path="Wilcken_David_Output_Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
