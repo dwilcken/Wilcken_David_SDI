@@ -28,3 +28,11 @@ console.log("Each person ate "+slicesPerPerson+" slices of pizza at the party");
 var leftovers = slices * pizzas % people;
 
 console.log("Sparky got "+leftovers+" slices of pizza");
+
+//Average shoping bill
+// You are budgeting your money for the year and must calculate your average weekly grocery shopping
+//spending over the past five weeks. Store the past five grocery totals as a list in an array. Create an
+//expression that will use the items in the array to calculate the average amount spent on groceries.
+var weeklyBill = [35 + 38 + 45 + 30 + 42];
+var averageBill =  weeklyBill / 5;
+console.log("You have spent a total of $"+weeklyBill+" on groceries over 5 weeks. That is an average of $"+averageBill+" per week");
