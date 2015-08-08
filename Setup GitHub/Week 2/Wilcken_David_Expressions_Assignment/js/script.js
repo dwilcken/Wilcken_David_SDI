@@ -8,6 +8,12 @@
 //ISA = Standard temp which is found by - 2 degrees celsius per 1000ft of altitude
 //Pressure altitude is measured in inches of mercury.
 
-var pressureAltitude = "Station Altimeter Setting";
-var currentTemperature = "Outside Air Temperature";
-var stationElevation = "Station Elevation AGL";
+var pressureAltitude = prompt("This is for calculating Density Altitude. \n " +
+    "Please Enter Station Altimeter Setting");
+var currentTemperature = prompt ("Enter Outside Air Temperature");
+var stationElevation = prompt ("Enter Station Elevation AGL");
+var standardTemperature = stationElevation / 1000 * 2;
+var densityAltitude = pressureAltitude + (120 * (currentTemperature - standardTemperature));
+
+alert("The Density Altitude For Your Location Is "+densityAltitude+" feet");
+console.log(densityAltitude);
