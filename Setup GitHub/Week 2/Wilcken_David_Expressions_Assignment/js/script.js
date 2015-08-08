@@ -2,18 +2,17 @@
 //08 Aug 15
 //Expressions Assignment
 
-//Density Altitude Calculator
-//Density altitude = pressure altitude +(120 x (OAT - ISA temp))
-//Oat = Outside air temp
-//ISA = Standard temp which is found by - 2 degrees celsius per 1000ft of altitude
-//Pressure altitude is measured in inches of mercury.
+var poolDepth = prompt("How much water for your pool? \n Please enter pool Depth");
+var poolLength = prompt ("What is the length of your pool?");
+var poolWidth = prompt ("What is the width of your pool?");
+var pricePerGallon = prompt ("How much do you currently pay per gallon of water?");
+var poolArea = poolDepth * poolLength * poolWidth;
+var gallons = poolArea / 7.48;
+var totalCost = pricePerGallon * gallons;
 
-var pressureAltitude = prompt("This is for calculating Density Altitude. \n " +
-    "Please Enter Station Altimeter Setting");
-var currentTemperature = prompt ("Enter Outside Air Temperature");
-var stationElevation = prompt ("Enter Station Elevation AGL");
-var standardTemperature = stationElevation / 1000 * 2;
-var densityAltitude = pressureAltitude + (120 * (currentTemperature - standardTemperature));
 
-alert("The Density Altitude For Your Location Is "+densityAltitude+" feet");
-console.log(densityAltitude);
+alert("The volume of your pool is "+poolArea+" square feet. \n Which is approximately "+gallons+
+        " gallons of water and will cost around $"+totalCost+".");
+
+console.log("The volume of your pool is "+poolArea+" square feet. \n Which is approximately "+gallons+
+    " gallons of water and will cost around $"+totalCost+".");
