@@ -6,4 +6,4 @@ var height = prompt("Please eneter the height");
 var area = width * height;
 //console.log(area);
 
-alert("The area of your rectangle is" + area +);
+alert("The area of your rectangle is");
