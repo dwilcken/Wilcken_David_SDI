@@ -34,3 +34,6 @@ console.log("How much do you currently pay per gallon of water?");
 console.log(pricePerGallon);
 console.log("The volume of your pool is "+poolArea+" square feet. \n Which is approximately "+gallons+
     " gallons of water and will cost around $"+totalCost+" to fill.");
+
+//validation I input the following values for the calculation; depth:5 length:10 width:15
+//cost per gallon:2. I got the following output data; volume: 750 gallons:100 cost:200
