@@ -1,24 +1,25 @@
 
-//check the login
-//Make sure the user has the correct username and password. If the username doesn't match
-//then a specific message for that should be printed to the console. IF the password dosen't
-//a message should appear for that, etc. Only one error message should appear.
+//Movie Ticket Price
+//The local theater in town has a ticket price of $12.00 but if you are a senior (55 and older)
+//and under 10 you get the discount price of $7.00. In addition, if a customer is seeing a movie
+//between 3pm and 5pm they can also get the discounted price. Determine which of the two prices
+//the customer is eligible for.
 
-var userNameEntry = prompt("Please enter username");
-var passWordEntry = prompt("Please enter password");
-var userName = "dwilcken";
-var passWord = "123456";
+var discountPrice = 7;
+var regularPrice = 12;
+var senior = 55;
+var kid = 10;
+var movieTime = (3 === 4 === 5);
 
-if(userNameEntry == userName && passWordEntry == passWord ){
-    console.log("Welcome " +userName+"!");}
-else if(userNameEntry != userName){
-    console.log("User not found. Try again");}
-else if(passWordEntry != passWord){
-    console.log("Password does not match.")
+if(senior) {
+    console.log("Your ticket price is $" + discountPrice + ".");
+}else if(kid){
+    console.log("Your ticket price is $"+discountPrice+".");
+}else if(movieTime){
+    console.log("Your ticket price is $"+discountPrice+".");
+}else{
+    console.log("Your ticket price is $"+regularPrice+".");
 }
-
-
-
 
 
 
