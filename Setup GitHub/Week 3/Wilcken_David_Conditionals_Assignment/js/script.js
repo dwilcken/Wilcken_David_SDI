@@ -1,4 +1,10 @@
 //David Wilcken
-//08 Aug 15
-//Expressions Assignment
+//13 Aug 15
+//Conditional Statements
+
+//Hunting calculator for season and age
+
+var = prompt("Current Date");
+var age = 15;
+
 

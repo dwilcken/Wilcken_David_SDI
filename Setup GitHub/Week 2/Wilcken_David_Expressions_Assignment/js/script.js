@@ -2,6 +2,17 @@
 //08 Aug 15
 //Expressions Assignment
 
+//prompts
+var poolDepth = prompt("How much water and money are your pool costing you? \n Please enter pool Depth");
+//prompt asking user to input how deep their pool is.
+var poolLength = prompt ("What is the length of your pool?");
+//prompt asking user to input the length of their pool.
+var poolWidth = prompt ("What is the width of your pool?");
+//prompt asking user to input the width of their pool.
+var pricePerGallon = prompt ("How much do you currently pay per gallon of water?");
+//prompt asking how much the user pays per gallon of water.
+
+
 //variables
 var poolArea = [poolDepth * poolLength * poolWidth];
 //An array that calculates the volume of the pool with l*w*d
@@ -15,15 +26,6 @@ var totalCost = pricePerGallon * gallons;
 //give them a total cost to fill up their pool.
 
 
-//prompts
-var poolDepth = prompt("How much water and money are your pool costing you? \n Please enter pool Depth");
-//prompt asking user to input how deep their pool is.
-var poolLength = prompt ("What is the length of your pool?");
-//prompt asking user to input the length of their pool.
-var poolWidth = prompt ("What is the width of your pool?");
-//prompt asking user to input the width of their pool.
-var pricePerGallon = prompt ("How much do you currently pay per gallon of water?");
-//prompt asking how much the user pays per gallon of water.
 
 //Output
 
