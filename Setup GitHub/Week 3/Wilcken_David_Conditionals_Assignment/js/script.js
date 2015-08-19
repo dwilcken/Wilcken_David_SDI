@@ -10,19 +10,29 @@
 var windMaxSolo = 20;
 var visMinSolo = 10;
 var denAltSolo = 8000;
-//var windDif = (currentWind - windMaxSolo);
-//var visDif = (visMinSolo - currentvis);
-//var altDif = (currentDenAlt - denAltSolo);
-
 
 
 var dayOrNight = prompt("Enter Time in Military Format");
     if (dayOrNight == ""){
         dayOrNight = prompt("Please enter the time.");
-        console.log("Thank you")
+        console.log("Thank you");
     }
     time = (dayOrNight < 1200) ? "Good morning, lets see if we can fly!" : "Good evening, lets see if we can fly!";
     console.log(time);
+
+var soloTime = prompt("Enter your current solo time.");
+    if (soloTime == ""){
+        soloTime = prompt("Please enter your solo time.");
+        console.log("Thank you.");
+    }
+
+var dualTime = prompt("Enter your dual hours flown with an instructor.");
+    if (dualTime == ""){
+        dualTime = prompt("Please enter dual hours.");
+        console.log("Thank you.");
+    }
+    var totalTime = Number(soloTime) + Number(dualTime);
+    console.log("You currently have "+totalTime+" total hours.");
 
 var currentWind = prompt("Enter Current Wind Speed");
 
@@ -55,17 +65,9 @@ var currentDenAlt = prompt("Enter Current Density Altitude.");
             "You may still fly with an instructor");
     }
 
-/*if(currentWind < windMaxSolo && currentvis > visMinSolo && currentDenAlt < denAltSolo) {
-        console.log("You are allowed to fly solo today.");
-}else if (currentWind > windMaxSolo) {
-        console.log("Sorry the winds are " +windDif+ "kts over your solo maximum. You may " +
-        "still fly with an instructor.");
-}else if(currentvis < visMinSolo) {
-         console.log("Sorry the visibility is " +visDif+ "sm less than your minimum. You may " +
-        "still fly with an instructor");
-}else if(currentDenAlt > denAltSolo){
-        console.log("Sorry the density altitude is "+altDif+" feet over you solo maximum. " +
-        "You may still fly with an instructor");
+if(currentWind < windMaxSolo && currentvis > visMinSolo && currentDenAlt < denAltSolo) {
+    console.log("You are allowed to fly solo today.");
+}else if(currentWind > windMaxSolo || currentvis < visMinSolo || currentDenAlt > denAltSolo) {
+    console.log("Or you may go home and study.");
 }
 
-*/
