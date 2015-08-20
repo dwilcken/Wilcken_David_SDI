@@ -1,8 +1,9 @@
-//Functions - Parameters and Arguments
+//Functions - Returning Values
 
-function dogYears(age){//parameters
-    var dogYears = age *7;
-    console.log("Sparky is "+dogYears+" years old.");
+var total = calcArea(30, 20);
+
+function calcArea(w, h){
+    var area = w * h;
+    return area;
 }
-dogYears(6);//arguments
-dogYears(7);
+console.log(total);
