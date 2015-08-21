@@ -10,10 +10,17 @@ while ( b > 0){ //checks the condition
 
 //do while loop
 
-var c = 10;
+/*var c = 10;
 
 do {
     console.log(c + 'kegs on the wall');
     c--;
 }
 while (c > 0);
+    */
+
+//For loop
+
+for (var i = 10; i > 0; i--){
+    console.log(i + 'kegs on the wall');
+}
