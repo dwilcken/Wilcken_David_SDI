@@ -1,3 +1,7 @@
+for (var i = 6; i > 0; i--) {
+    console.log("Here are your numbers " + floridaRandom());
+}
+
 //Florida lottery 6 random number 1-53
 function floridaRandom(min,max){
     var min = 1;
@@ -5,7 +9,7 @@ function floridaRandom(min,max){
     return Math.floor(Math.random() * (max - min +1)) +min;
 }
 
-console.log(floridaRandom());
+//console.log(floridaRandom());
 
 //Powerball lottery 5 random number 1-59 and powerball 1-35
 function lotteryRandom(min, max){
@@ -22,3 +26,4 @@ function powerballRandom(min, max){
     return Math.floor(Math.random() * (max - min +1))+min;
 }
 console.log(powerballRandom());
+
