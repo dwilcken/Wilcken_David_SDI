@@ -5,9 +5,10 @@ var bigPb = bigPbCreator(1,35);
 
 var whichLotto = prompt("Please enter which lotto you are playing.\nFlorida State or Powerball.");
     if (whichLotto == "") {
-        whichLotto = prompt("Please enter which lotto.");
+        whichLotto = prompt("Please enter which lotto.\nFlorida State or Powerball.");
         console.log("Thank you.");
-    }else if(whichLotto == "Florida State"){
+    }
+if(whichLotto == "Florida State"){
         console.log("Your Florida State Lottery Numbers Are: "+flLotto+".");
     }else if(whichLotto == "Powerball"){
         console.log("Your Powerball Numbers Are: "+pbLotto+" Powerball: "+bigPb+".");
