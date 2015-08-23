@@ -1,21 +1,21 @@
-var flLotto = lottoCreator(1,53);
-var pbLotto = pblottoCreator(1,59);
-var bigPb = bigPbCreator(1,35);
+var flLotto = lottoCreator(1,53);//assigning var to lottoCreator function and setting min & max
+var pbLotto = pblottoCreator(1,59);//assigning var to lottoCreator function and setting min & max
+var bigPb = bigPbCreator(1,35);//assigning var to bigPbCreator function and setting min & max
 
 
 var whichLotto = prompt("Please enter which lotto you are playing.\nFlorida State or Powerball.");
-    if (whichLotto == "") {
-        whichLotto = prompt("Please enter which lotto.\nFlorida State or Powerball.");
-        console.log("Thank you.");
+    if (whichLotto == "") {//prompt validation
+        whichLotto = prompt("Please enter which lotto.\nFlorida State or Powerball.");//reminder to the user to enter a value
+        console.log("Thank you.");//log thanking the user for their input
     }
-if(whichLotto == "Florida State"){
-        console.log("Your Florida State Lottery Numbers Are: "+flLotto+".");
-    }else if(whichLotto == "Powerball"){
-        console.log("Your Powerball Numbers Are: "+pbLotto+" Powerball: "+bigPb+".");
+if(whichLotto == "Florida State"){//condition if Florida State is selected
+        console.log("Your Florida State Lottery Numbers Are: "+flLotto+".");//out put for FS
+    }else if(whichLotto == "Powerball"){//condition if Powerball is selected
+        console.log("Your Powerball Numbers Are: "+pbLotto+" Powerball: "+bigPb+".");//out put for PB
     }
 
 
-function lottoCreator(min, max) {
+function lottoCreator(min, max) {//
 
     var myArray =[];
 
