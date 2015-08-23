@@ -1,5 +1,5 @@
 var flLotto = lottoCreator(1, 53);
-var pbLotto = lottoCreator(1,59);
+var pbLotto = pblottoCreator(1,59);
 
 
 var whichLotto = prompt("Please enter which lotto you are playing.\nFlorida State or Powerball.");
@@ -19,6 +19,17 @@ function lottoCreator(min, max) {
 
     for (var i = 0; i < 6; i++){
 
+        myArray[i] = Math.floor(Math.random() * (max - min +1)) +min;
+    }
+
+    return myArray
+}
+
+function pblottoCreator (min, max){
+
+    var myArray =[];
+    
+    for (var i = 0; i < 5; i++){
         myArray[i] = Math.floor(Math.random() * (max - min +1)) +min;
     }
 
