@@ -1,3 +1,18 @@
+var flLotto = lottoCreator(1, 53);
+var pbLotto = lottoCreator(1,59);
+
+
+var whichLotto = prompt("Please enter which lotto you are playing.\nFlorida State or Powerball.");
+    if (whichLotto == "") {
+        whichLotto = prompt("Please enter which lotto.");
+        console.log("Thank you.");
+    }else if(whichLotto == "Florida State"){
+        console.log("Your Florida State Lottery Numbers Are: "+flLotto+".");
+    }else if(whichLotto == "Powerball"){
+        console.log("Your Powerball Numbers Are: "+pbLotto+".");
+    }
+
+
 function lottoCreator(min, max) {
 
     var myArray =[];
@@ -10,8 +25,8 @@ function lottoCreator(min, max) {
     return myArray
 }
 
-var flLotto = lottoCreator(1, 53);
-console.log("Your Florida State Lottery Numbers: "+flLotto+".");
 
-var pbLotto = lottoCreator(1,59);
-console.log("Your Powerball Numbers: "+pbLotto+".");
+//console.log("Your Florida State Lottery Numbers: "+flLotto+".");
+
+
+//console.log("Your Powerball Numbers: "+pbLotto+".");
