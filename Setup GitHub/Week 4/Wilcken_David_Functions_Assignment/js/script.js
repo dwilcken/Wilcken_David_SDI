@@ -27,8 +27,33 @@ function lottoVerify (lotto) {//function to verify user enters a value
 
 function lottoCreator(min, max, num) {//creating function with function parameter
     var myArray =[];//creating an array var for the function
-    for (var i = 0; i < num; i++){//creating a loop to repeat the code below 6 times
-        myArray[i] = Math.floor(Math.random() * (max - min +1)) +min;//code that selects a random #
+    for (var i = 0; i < num; i++) {//creating a loop to repeat the code below 6 times
+        myArray[i] = Math.floor(Math.random() * (max - min + 1)) + min;//code that selects a random #
+        if(myArray[1] == myArray [0]){
+            while (myArray[1]==myArray[0]){
+                myArray[1]=Math.floor(Math.random() * max);
+            }
+        /*if(myArray[2] == myArray[1] || myArray[2] == myArray[0]){
+            while(myArray[2]==myArray[1] || myArray[2]==myArray[0]){
+                myArray[2]=Math.floor(Math.random() * max);
+            }
+        if(myArray[3 == myArray[2] || myArray[3] == myArray[1] || myArray[3] == myArray[0]]){
+            while(myArray[3 == myArray[2] || myArray[3] == myArray[1] || myArray[3] == myArray[0]]){
+                myArray[3]=Math.floor(math.random () * max);
+            }
+        if(myArray[4]==myArray[3]||myArray[4]==myArray[2]||myArray[4]==myArray[1]||myArray[4]== myArray[0]){
+            while(myArray[4]==myArray[3]||myArray[4]==myArray[2]||myArray[4]==myArray[1]||myArray[4]== myArray[0]){
+                myArray[4]=Math.floor(math.random () * max);
+            }
+        if(myArray[5]==myArray[4]||myArray[5]==myArray[3]||myArray[5]==myArray[2]||myArray[5]==myArray[1]||myArray[5]==myArray[0]){
+            while(myArray[5]==myArray[4]||myArray[5]==myArray[3]||myArray[5]==myArray[2]||myArray[5]==myArray[1]||myArray[5]==myArray[0]){
+                myArray[5]=Math.floor(math.random() * max);
+            }
+        }
+        }
+        }
+        }
+        */}
     }
     return myArray// function return that stops the function
 }
