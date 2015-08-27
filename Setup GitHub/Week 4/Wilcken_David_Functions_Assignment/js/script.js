@@ -1,9 +1,9 @@
 /*
-  David Wilcken
-  SDI
-  26 Aug 2015
-  Functions Assignment
-*/
+ David Wilcken
+ SDI
+ 26 Aug 2015
+ Functions Assignment
+ */
 
 //variables
 var flLotto = lottoCreator(1,53,6);//assigning var to lottoCreator function and setting min & max & number of balls
@@ -30,16 +30,7 @@ function lottoCreator(min, max, num) {//creating function with function paramete
     var myArray =[];//creating an array var for the function
     for (var i = 0; i < num; i++) {//creating a loop to repeat the code below 6 times
         myArray[i] = Math.floor(Math.random() * (max - min + 1)) + min;//code that selects a random #
-        }
-        while (myArray[i] === myArray[0] || myArray[i] === myArray[1] || myArray[i] === myArray[2] ||
-            myArray [i] === myArray[3] || myArray[i] === myArray[4] || myArray [i] === myArray [5]) {
-
-            if (myArray[i] !== myArray[0] || myArray[i] !== myArray[1] || myArray[i] !== myArray[2] ||
-                myArray[i] !== myArray[3] || myArray[i] !== myArray[4] || myArray[i] !== myArray[5]) {
-
-                break;
-            }
-        }
+    }
     return myArray;// function return that stops the function
 }
 
@@ -47,11 +38,9 @@ function lottoCreator(min, max, num) {//creating function with function paramete
 lottoVerify(whichLotto);//calling on the lottoVerify function to run.
 
 if(whichLotto == "Florida State"){//condition if Florida State is selected
-        console.log("Your Florida State Lottery Numbers Are: "+flLotto+".");//out put for FS
-    }else if(whichLotto == "Powerball"){//condition if Powerball is selected
-        console.log("Your Powerball Numbers Are: "+pbLotto+" Powerball: "+bigPb+".");//out put for PB
-    }
+    console.log("Your Florida State Lottery Numbers Are: "+flLotto+".");//out put for FS
+}else if(whichLotto == "Powerball"){//condition if Powerball is selected
+    console.log("Your Powerball Numbers Are: "+pbLotto+" Powerball: "+bigPb+".");//out put for PB
+}
 
 //Validated all functions, loops and prompts
-
-
